@@ -21,6 +21,8 @@
 		D67D18762908540D007C6A0A /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D18752908540D007C6A0A /* LoginScreenView.swift */; };
 		D67D18782908541E007C6A0A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D18772908541E007C6A0A /* LoginScreenViewController.swift */; };
 		D67D187A29085518007C6A0A /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D187929085518007C6A0A /* ViewCoding.swift */; };
+		D67D187C29085654007C6A0A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D67D187B29085654007C6A0A /* .gitignore */; };
+		D67D187E2908566F007C6A0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D67D187D2908566F007C6A0A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		D67D18752908540D007C6A0A /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		D67D18772908541E007C6A0A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		D67D187929085518007C6A0A /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
+		D67D187B29085654007C6A0A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D67D187D2908566F007C6A0A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		D67D182D290817E5007C6A0A = {
 			isa = PBXGroup;
 			children = (
+				D67D187D2908566F007C6A0A /* README.md */,
+				D67D187B29085654007C6A0A /* .gitignore */,
 				D67D186F29085279007C6A0A /* .swiftlint.yml */,
 				D67D1838290817E5007C6A0A /* Roulette */,
 				D67D1852290817E8007C6A0A /* RouletteTests */,
@@ -271,6 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67D187E2908566F007C6A0A /* README.md in Resources */,
+				D67D187C29085654007C6A0A /* .gitignore in Resources */,
 				D67D187029085279007C6A0A /* .swiftlint.yml in Resources */,
 				D67D1849290817E8007C6A0A /* LaunchScreen.storyboard in Resources */,
 				D67D1846290817E8007C6A0A /* Assets.xcassets in Resources */,
