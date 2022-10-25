@@ -17,6 +17,10 @@
 		D67D1854290817E8007C6A0A /* RouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D1853290817E8007C6A0A /* RouletteTests.swift */; };
 		D67D185E290817E8007C6A0A /* RouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D185D290817E8007C6A0A /* RouletteUITests.swift */; };
 		D67D1860290817E8007C6A0A /* RouletteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D185F290817E8007C6A0A /* RouletteUITestsLaunchTests.swift */; };
+		D67D187029085279007C6A0A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D67D186F29085279007C6A0A /* .swiftlint.yml */; };
+		D67D18762908540D007C6A0A /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D18752908540D007C6A0A /* LoginScreenView.swift */; };
+		D67D18782908541E007C6A0A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D18772908541E007C6A0A /* LoginScreenViewController.swift */; };
+		D67D187A29085518007C6A0A /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D187929085518007C6A0A /* ViewCoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		D67D1859290817E8007C6A0A /* RouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67D185D290817E8007C6A0A /* RouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteUITests.swift; sourceTree = "<group>"; };
 		D67D185F290817E8007C6A0A /* RouletteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D67D186F29085279007C6A0A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D67D18752908540D007C6A0A /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		D67D18772908541E007C6A0A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		D67D187929085518007C6A0A /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		D67D182D290817E5007C6A0A = {
 			isa = PBXGroup;
 			children = (
+				D67D186F29085279007C6A0A /* .swiftlint.yml */,
 				D67D1838290817E5007C6A0A /* Roulette */,
 				D67D1852290817E8007C6A0A /* RouletteTests */,
 				D67D185C290817E8007C6A0A /* RouletteUITests */,
@@ -101,6 +110,7 @@
 		D67D1838290817E5007C6A0A /* Roulette */ = {
 			isa = PBXGroup;
 			children = (
+				D67D18712908536A007C6A0A /* Source Code */,
 				D67D1839290817E5007C6A0A /* AppDelegate.swift */,
 				D67D183B290817E5007C6A0A /* SceneDelegate.swift */,
 				D67D183D290817E5007C6A0A /* ViewController.swift */,
@@ -130,6 +140,32 @@
 			path = RouletteUITests;
 			sourceTree = "<group>";
 		};
+		D67D18712908536A007C6A0A /* Source Code */ = {
+			isa = PBXGroup;
+			children = (
+				D67D187229085374007C6A0A /* Protocols */,
+				D67D1874290853E1007C6A0A /* LoginScreen */,
+			);
+			path = "Source Code";
+			sourceTree = "<group>";
+		};
+		D67D187229085374007C6A0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D67D187929085518007C6A0A /* ViewCoding.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D67D1874290853E1007C6A0A /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D67D18752908540D007C6A0A /* LoginScreenView.swift */,
+				D67D18772908541E007C6A0A /* LoginScreenViewController.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +176,7 @@
 				D67D1832290817E5007C6A0A /* Sources */,
 				D67D1833290817E5007C6A0A /* Frameworks */,
 				D67D1834290817E5007C6A0A /* Resources */,
+				D67D186C290818A9007C6A0A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67D187029085279007C6A0A /* .swiftlint.yml in Resources */,
 				D67D1849290817E8007C6A0A /* LaunchScreen.storyboard in Resources */,
 				D67D1846290817E8007C6A0A /* Assets.xcassets in Resources */,
 				D67D1841290817E5007C6A0A /* Main.storyboard in Resources */,
@@ -256,13 +294,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D67D186C290818A9007C6A0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D67D1832290817E5007C6A0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67D18762908540D007C6A0A /* LoginScreenView.swift in Sources */,
 				D67D183E290817E5007C6A0A /* ViewController.swift in Sources */,
+				D67D18782908541E007C6A0A /* LoginScreenViewController.swift in Sources */,
 				D67D1844290817E5007C6A0A /* Roulette.xcdatamodeld in Sources */,
+				D67D187A29085518007C6A0A /* ViewCoding.swift in Sources */,
 				D67D183A290817E5007C6A0A /* AppDelegate.swift in Sources */,
 				D67D183C290817E5007C6A0A /* SceneDelegate.swift in Sources */,
 			);
